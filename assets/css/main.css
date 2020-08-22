@@ -915,10 +915,20 @@ i.like-icon-filled {
   padding-bottom:1.6rem;
   padding-top:1.6rem;
 }
+.rating-star{
+  border-right: 1px solid #ccc;
+  padding-right: 1.6rem;
+}
+.rating-star-icon{
+  font-size: 1.6rem;
+  color:#ee4d2d; 
+}
+
 
 .num-review {
   border-right: 1px solid #ccc;
   padding-right: 1.6rem;
+  padding-left: 1.6rem;
   font-size: 1.4rem;
   color:var(--text-color);
 }
