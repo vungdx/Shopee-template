@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets//css/modal.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.13.0-web/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
 </head>
 
 <body>
@@ -150,19 +149,6 @@
                         <i class="header__search-btn-icon fas fa-search"></i>
                     </button>
                 </div>
-
-                <!-- Cart-layout  -->
-                <div class="header__cart">
-                    <div class="header__cart-wrapper">
-                        <i class="header_cart-icon fas fa-shopping-cart"></i>
-                        <span class="header_cart-mount">3</span>
-                        <!-- When cart empty, add class is 'no-cart'  -->
-                        <div class="header__cart-list ">
-                            <img src="./assets/images/no-cart.jpeg" alt="no-cart" class="header__cart-img-no-cart">
-                            <span class="header__cart-list-label">Chưa có sản phẩm</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -171,80 +157,165 @@
     <div class="content">
         <div class="grid">
             <div class="grid__row padding-top ">
-                <!-- image -->
-                <div class="product-detail-image">
-                    <img src="https://thumb.guucdn.net/800x0/images.guucdn.net/lily/2020/20c0d26b2889e9a1dc260cf8ba9ee50be937963d.png"
-                        alt="" />
+                <!-- Heading -->
+                <div class="cart-item-heading">
+                    <div class="grid__column-6">
+                        <span class="cart-item-heading-name">Sản phẩm</span>
+                    </div>
+                    <div class="grid__column-6">
+                        <div class="cart-item-heading-left">
+                            <div class="grid__column-6-4">
+                                <span class="cart-item-heading-left-unit-price">Đơn giá</span>
+                            </div>
+                            <div class="grid__column-6-4">
+                                <span class="cart-item-heading-left-qty">Số lượng</span>
+                            </div>
+                            <div class="grid__column-6-4">
+                                <span class="cart-item-heading-left-price">Số tiền</span>
+                            </div>
+                            <div class="grid__column-6-4">
+                                <span class="cart-item-heading-left-action">Thao tác</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- info -->
-                <div class="product-detail-info">
-                    <span class="name">
-                        NĂM THÁNG ẤY, VÌ MỘT NGƯỜI NÓI THÍCH MÀU XANH MÀ ĐEM LÒNG YÊU LUÔN CẢ BẦU TRỜI GIÁ HỦY DIỆT
-                        [SHOPEE]
-                        Mặt nạ dưỡng da Chất lượng thiên nhiên hàng
-                        mới nhất
-                    </span>
-                    <div class="review-sold">
-                        <div class="rating-star">
-                            <i class="rating-star-icon fas fa-star"></i>
-                            <i class="rating-star-icon fas fa-star"></i>
-                            <i class="rating-star-icon fas fa-star"></i>
-                            <i class="rating-star-icon fas fa-star"></i>
-                            <i class="rating-star-icon far fa-star"></i>
-                        </div>
-                        <div class="num-review">Chưa có đánh giá</div>
-                        <div class="num-sold">
-                            <span class="num">0</span>
-                            <span>Đã bán</span>
-                        </div>
-                    </div>
-                    <div class="price">1000$</div>
-                    <div class="shipping">
-                        <span class="shipping-label">Vận chuyển</span>
-                        <div class="shipping-option">
-                            <div class="shipping-free">
-                                <span class="shipping-free-label">Miễn phí vận chuyển</span>
-                                <label class="shipping-free-condition" for="">Miễn phí vận chuyển khi đơn hàng đạt giá
-                                    trị tối thiểu
-                                </label>
+
+                <!-- Content -->
+                <ul class="cart-item-content-list">
+                    <li class="cart-item-content">
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-product">
+                                <img class="cart-item-content-img"
+                                    src="https://cf.shopee.vn/file/5ac7fcb1b03f05c08f987f9df6a25841_tn" alt="" />
+                                <span class="cart-item-content-name"> Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời </span>
                             </div>
-                            <div class="shipping-to-wrapper">
-                                <div class="shipping-to">
-                                    <span class="shipping-to-label"><i class="shipping-icon fas fa-truck"></i> Vận
-                                        chuyển tới </span>
-                                    <select class="shipping-to-address">
-                                        <option value="">Huyện Ba Vì, Hà Nội</option>
-                                        <option value="">TX.Sơn Tây, Hà Nội</option>
-                                    </select>
+                        </div>
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-left">
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-unit-price">85.000₫</span>
                                 </div>
-                                <div class="shipping-fee">
-                                    <span class="shipping-fee-label"><i class="shipping-icon fas fa-dollar-sign"></i>Phí
-                                        vận chuyển</span>
-                                    <select class="shipping-fee-price">
-                                        <option value="">15.000đ</option>
-                                        <option value="">12.000đ</option>
-                                    </select>
+                                <div class="grid__column-6-4">
+                                    <div class="cart-item-content-left-qty quantity-buy">
+                                        <button class="quantity-num-dec">-</button>
+                                        <span class="quantity-num">1</span>
+                                        <button class="quantity-num-inc">+</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-price">85.000₫</span>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <button class="cart-item-content-left-action">Xóa</button>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="quantity">
-                        <span class="quantity-label">Số lượng</span>
-                        <div class="quantity-buy">
-                            <button class="quantity-num-dec">-</button>
-                            <span class="quantity-num">1</span>
-                            <button class="quantity-num-inc">+</button>
+                    </li>
+                    <li class="cart-item-content">
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-product">
+                                <img class="cart-item-content-img"
+                                    src="https://cf.shopee.vn/file/5ac7fcb1b03f05c08f987f9df6a25841_tn" alt="" />
+                                <span class="cart-item-content-name"> Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời </span>
+                            </div>
                         </div>
-                        <span class="quantity-in-stock">2000 Sản phẩm có sẵn</span>
-                    </div>
-
-                    <button class="btn btn--primary add-to-cart"> <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
-                        hàng</button>
-                    <button class="btn btn--primary">Mua ngay</button>
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-left">
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-unit-price">85.000₫</span>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <div class="cart-item-content-left-qty quantity-buy">
+                                        <button class="quantity-num-dec">-</button>
+                                        <span class="quantity-num">1</span>
+                                        <button class="quantity-num-inc">+</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-price">85.000₫</span>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <button class="cart-item-content-left-action">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-item-content">
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-product">
+                                <img class="cart-item-content-img"
+                                    src="https://cf.shopee.vn/file/5ac7fcb1b03f05c08f987f9df6a25841_tn" alt="" />
+                                <span class="cart-item-content-name"> Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời </span>
+                            </div>
+                        </div>
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-left">
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-unit-price">85.000₫</span>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <div class="cart-item-content-left-qty quantity-buy">
+                                        <button class="quantity-num-dec">-</button>
+                                        <span class="quantity-num">1</span>
+                                        <button class="quantity-num-inc">+</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-price">85.000₫</span>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <button class="cart-item-content-left-action">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-item-content">
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-product">
+                                <img class="cart-item-content-img"
+                                    src="https://cf.shopee.vn/file/5ac7fcb1b03f05c08f987f9df6a25841_tn" alt="" />
+                                <span class="cart-item-content-name"> Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời Năm tháng ấy, vì một người nói thích màu xanh mà
+                                    đem lòng yêu luôn cả bầu trời </span>
+                            </div>
+                        </div>
+                        <div class="grid__column-6">
+                            <div class="cart-item-content-left">
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-unit-price">85.000₫</span>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <div class="cart-item-content-left-qty quantity-buy">
+                                        <button class="quantity-num-dec">-</button>
+                                        <span class="quantity-num">1</span>
+                                        <button class="quantity-num-inc">+</button>
+                                    </div>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <span class="cart-item-content-left-price">85.000₫</span>
+                                </div>
+                                <div class="grid__column-6-4">
+                                    <button class="cart-item-content-left-action">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart-item-content-checkout">
+                    <span class="cart-item-content-total-price-title">Tổng tiền hàng (4 sản phẩm):</span>
+                    <span class="cart-item-content-total-price-num">340.000₫</span>
+                    <button class="btn btn--primary">Mua hàng</button>
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <!-- FOOTER -->
