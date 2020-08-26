@@ -11,12 +11,98 @@
 .header__navbar-list {
   padding: 0;
   margin: 0.5rem 0 0 0;
+  display:flex;
 }
 
 .header__navbar-item {
   margin: 0 8px;
   position: relative;
   min-height: 26px;
+}
+
+/* User info */
+.header__navbar-user{
+  display: flex;
+  align-items: center;
+  position:relative;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu{
+  display:block;
+}
+
+.header__navbar-user-img{
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border:1px solid rgba(0, 0, 0, 0.1)
+}
+
+.header__navbar-user-name{
+  margin-left: 8px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.header__navbar-user-menu{
+  position: absolute;
+  z-index: 1;
+  padding-left: 0;
+  top: calc(100% + 4px);
+  right: 0;
+  border-radius: 2px;
+  width: 160px;
+  background-color: var(--white-color);
+  list-style-type: none;
+  box-shadow: 0 1px 2px #e0e0e0;
+  display: none;
+}
+
+
+
+.header__navbar-user-menu::before{
+  position: absolute;
+  content: "";
+  border-width: 10px 14px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
+  right: 22px;
+  top: -19px;
+}
+  
+.header__navbar-user-menu::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: -8px;
+  width: 56%;
+  height:8px;
+
+}
+
+.header__navbar-user-item a{
+  text-decoration:none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  padding: 4px 16px;
+  display: block;
+  font-weight: 400;
+}
+
+.header__navbar-user-item a:first-child{
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+
+}
+
+.header__navbar-user-item a:last-child{
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  
+}
+
+.header__navbar-user-item a:hover{
+  background-color: #fafafa;
 }
 
 .header__navbar-item,
